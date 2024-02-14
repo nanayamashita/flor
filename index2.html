@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            min-height: 100vh;
+            background: black;
+        }
+
+
+        .content p{
+            color: white;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-right: 20%;
+            padding-left: 5%;
+        }
+
+        .container{
+           position: relative;
+           width: 100%;
+           height: 100vh;
+           overflow: hidden; 
+        }
+
+        .bubbles{
+            position: relative;
+            display: flex;
+        }
+
+        .bubbles span{
+            position: relative;
+            width: 30px;
+            height: 30px;
+            background: #4fc3dc ;
+            margin: 0 4px;
+            border-radius: 50%;
+            box-sizing: 0 0 0 10px #4fc3dc44,
+            0 0 50px #4fc3dc,
+            0 0 100px #4fc3dc;
+            animation: animate 15s linear infinite;
+            animation-duration: calc(125s / var(--i));
+        }
+
+        .bubbles span:nth-child(even){
+            background: #ff2d75;
+            box-shadow: 0 0 0 10px #ff2d7544,
+            0 0 50px #ff2d75,
+            0 0 100px #ff2d75;
+        }
+
+        @keyframes animate
+        {
+            0%
+            {
+                transform: translateY(100vh) scale(0);
+            }
+            100%
+            {
+                transform: translateY(-10vh) scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bubbles">
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:28;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:28;"></span>
+        </div>
+        <div class="content">
+            <h1 style="color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; padding-left: 5%;">UNTUK HAFID</h1>
+            <br>
+            <P>Hai hafidku sayangku cintaku, makasih udah ada buat aku. Makasih ya udah jadi support systemku. Bersamamu, aku merasa beruntungnya aku memiliki seseorang sepertimu yang memahami dan mencintai aku apa adanya. Kini setiap hari yang kulalui terasa lebih indah dan berwarna. Pesan darimu lah yang selalu aku tunggu setiap saat. Rasanya setiap detik, menit, dan jam aku selalu rindu akan semua hal tentang dirimu. Aku rindu akan wajahmu, suaramu, dan senyumanmu.</P>
+            <p>Maaf kalau aku sering buat kesalahan , buat kamu marah, buat kamu kecewa. aku minta maaf kalau aku belum bisa jadi yang sempurna, aku minta maaf kalau aku banyak kurang dan salahnya. Kalau ada masalah kamu harus cerita ya. Kalau nanti kita ada masalah tolong kita omongin baik baik ya.</p>
+            <br>
+            <p>hafid, I'm so lucky you're mine. I love you more and more every day. I always miss you every second I have. I promise I will always be there for you, always support you, always care about you.</p>
+            <p>aku harap hubungan kita bisa bertahan selamanya, tolong jangan bosen sama aku, tolong jangan hilang rasa sama aku. kamu yang pertama buat aku , tolong jangan buat hubungan ini jadi akhir yang sedih. Let's make more memories and happiness again and again</p>
+            <br><br>
+            <p>You are the most beautiful part of my life, and I am grateful every day that I found you. I love you with all my body and soul, and always will forever.</p>
+        </div>
+        <br><br>
+        <audio id="audioPlayer" controls style="margin-left: 5%;">
+            <source src="Andra And The Backbone - Sempurna (Official Music Video).mp3" type="audio/mpeg">
+          </audio>
+    </div> 
+
+    <script src="main.js"></script>  
+</body>
+</html>
